@@ -1,27 +1,67 @@
-.caixa {
-  width: 940px;
-  position: relative;
-  margin: 0 auto;
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #4885F5;
+  font-family: "Almarai", sans-serif;
+  font-weight: 300;
+  font-style: norma
 }
 
-main {
-  width: 940px;
-  margin: 0 auto;
+.fundo-img {
+  background-color: white;
+  text-align: center;
 }
 
-form {
-  margin: 40px 0; 
+img {
+  width: 200px;
 }
 
-form label, form legend {
+.div-conteudo {
+  align-items: center;
+  text-align: center;
+}
+
+label,
+legend {
   display: block;
   font-size: 20px;
-  margin-bottom: 10px;
+}
+
+select {
+  padding: 5px 20px;
+  border: none;
+  outline: 0;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+select:hover {
+  padding: 5px 20px;
+  border: none;
 }
 
 .input-padrao {
-  display: block;
-  margin-bottom: 20px;
-  padding: 10px 25px;
-  width: 50%;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.enviar {
+  padding: 20px 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.enviar:hover {
+  padding: 20px 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #a6a0a0;
+  color: #fafafa;
 }

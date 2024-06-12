@@ -4,41 +4,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Recepção</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div class="caixa">
-    <h1>Formulário de recepção</h1>
-    <h2>Seja bem-vindo à feira de cursos técnicos do Colégio Lindaura</h2>
+
+  <div class="fundo-img">
+  <img src="logo.jpg">
+    </div>
+  
+  <div class="div-conteudo">
+     <h1>Feira de Cursos Técnicos</h1>
+    <legend>Seja bem-vindo(a).</legend>
+    <br>
+    <legend>Por favor, preencha as informações a seguir: </legend>
+    <br>
+
+    <label for="nomeSobrenome">Nome e Sobrenome</label>
+    <input class="input-padrao" type="text" id="nomeSobrenome" required>
+    <br>
+
+    <legend>Você é:</legend>
+    <select>
+      <option>Pai/Mãe</option>
+      <option>Responsável</option>
+      <option>Aluno</option>
+      <option>Visitante</option>
+    </select>
+    <br>
+    <label for="horario">Horário de chegada</label>
+    <input class="input-padrao" type="time" id="horario" required>
+    <br><br>
+
+    <label for="mensagem">O que você espera conhecer nesse evento?</label>
+    <textarea class="input-padrao" cols="25" rows="5" id="mensagem" required></textarea>
+    <br><br>
+
+    <input class="enviar" type="submit" value="Enviar o formulário">
   </div>
 
-  <main>
-  <form>
-    <label for="nomeSobrenome">Nome e sobrenome</label>
-    <input class="input-padrao" type="text" id="nomeSobrenome" required>
-    
-    <label for="email">Email</label>
-    <input class="input-padrao" type="email" id="email" required>
-
-    <label for="telefone">Telefone</label>
-    <input class="input-padrao"  type="tel" id="telefone" required>
-  
-      <legend>Qual seu gênero?</legend>
-      <select>
-        <option> Feminino </option>
-        <option> Masculino </option>
-        <option> Outro </option>
-      </select><br></br>
-
-    <label for="horário">Horário de entrada</label>
-    <input class="input-padrao" type="time" id="data" required>
-      
-<input type="submit" value="Enviar o formulário">
-  </form>
-  </main>
-  <script src="script.js"></script>
 </body>
 
 </html>
